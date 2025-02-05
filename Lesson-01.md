@@ -16,6 +16,9 @@ Before installing any new software, it’s essential to ensure your system is up
 ### Run the following command to update your system's package lists:
 ```bash
 sudo apt update
+```
+---
+
 
 ## 2. Install Ansible
 
