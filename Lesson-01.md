@@ -15,6 +15,9 @@ Before installing any new software, it’s essential to ensure your system is up
 
 ### Run the following command to update your system's package lists:
 ```bash
+cat /etc/os-release
+whoami
+hostname
 sudo apt update
 ```
 ---
@@ -26,6 +29,8 @@ Now that your system is up-to-date, you can proceed with installing Ansible. Ubu
 
 ### Run the following command to install Ansible:
 ```bash
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible -y
 ```
 
