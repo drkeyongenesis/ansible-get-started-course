@@ -184,5 +184,3 @@ While this guide used `localhost` for demonstration purposes, in a real-world sc
 
 As you continue using Ansible, consider exploring **Ansible Playbooks** to automate more complex tasks and workflows.
 ```
-
-You can copy and paste this markdown into a `.md` file for proper rendering in markdown viewers.
