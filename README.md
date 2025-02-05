@@ -10,7 +10,7 @@ This course is designed to teach you the basics of using Ansible to configure Li
 
 CodeSpaces is an interactive, hands-on learning platform dedicated to coding and technology. It combines labs, AI assistance, and virtual machines to provide a no-video, practical learning experience.
 
-![](https://tutorial-screenshot.getvm.io/images/vm-1725247253.png)
+![(https://tutorial-screenshot.getvm.io/images/vm-1725247253.png)]
 
 - A strict “Learn by Doing” approach with exclusive hands-on labs and no videos.
 - Interactive online environments within the browser, with automated step-by-step checks.
