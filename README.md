@@ -41,9 +41,9 @@ Your new codespace instance:
 |      02 | 🎯 Setup Ansible by Yourself (SL3/4)            | ★☆☆          | <a target='_blank' href=''>Start Challenge</a>                    |
 |      03 | 📖 Ansible Configuration                        | ★☆☆          | <a target='_blank' href='https://github.com/drkeyongenesis/ansible-get-started-course/blob/main/Lesson-03.md'>Start Lab</a>                         |
 |      04 | 🎯 Resolving Ansible Python Interpreter Warning | ★☆☆          | <a target='_blank' href=''>Start Challenge</a> |
-|      05 | 📖 Ansible Groups Inventory                     | ★☆☆          | <a target='_blank' href=''>Start Lab</a>                      |
-|      06 | 📖 Ansible Ad-Hoc Commands                      | ★☆☆          | <a target='_blank' href=''>Start Lab</a>                       |
-|      07 | 📖 Ansible Playbook Basics                      | ★☆☆          | <a target='_blank' href=''>Start Lab</a>                       |
+|      05 | 📖 Ansible Groups Inventory                     | ★☆☆          | <a target='_blank' href='https://github.com/drkeyongenesis/ansible-get-started-course/blob/main/Lesson-05.md'>Start Lab</a>        |
+|      06 | 📖 Ansible Ad-Hoc Commands                      | ★☆☆          | <a target='_blank' href='https://github.com/drkeyongenesis/ansible-get-started-course/blob/main/Lesson-06.md'>Start Lab</a>        |
+|      07 | 📖 Ansible Playbook Basics                      | ★☆☆          | <a target='_blank' href='https://github.com/drkeyongenesis/ansible-get-started-course/blob/main/Lesson-07.md'>Start Lab</a>        |
 |      08 | 📖 Manage Multiple Ansible Inventories          | ★☆☆          | <a target='_blank' href=''>Start Lab</a>             |
 |      09 | 🎯 Ansible Group Variables                      | ★☆☆          | <a target='_blank' href=''>Start Challenge</a> |                |
 |      10 | 📖 Ansible Conditionals and Loops               | ★☆☆          | <a target='_blank' href=''>Start Lab</a>             |              |
