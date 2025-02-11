@@ -1,19 +1,20 @@
+## Introduction
 In this course, you will learn how to use Ansible to configure Linux hosts. You will start by learning how to install Ansible, and then explore various Ansible modules to perform common tasks such as running shell commands, managing packages, copying files, managing cron jobs, fetching files, and more. You will also learn how to work with Ansible's inventory and use advanced features like local actions and multi-inventory.
 
-🎯 Tasks
+## 🎯 Tasks
 In this course, you will learn:
-How to install Ansible on Ubuntu
-How to use the Ansible Script, Shell, Apt, Copy, File, Cron, Fetch, Command, get_url, Local Action, and Stat modules
-How to work with Ansible's groups inventory
-How to use Ansible's multi-inventory feature
+- How to install Ansible on Ubuntu
+- How to use the Ansible Script, Shell, Apt, Copy, File, Cron, Fetch, Command, get_url, Local Action, and Stat modulese
+- How to work with Ansible's groups inventory
+= How to use Ansible's multi-inventory feature
 
-🏆 Achievements
-After completing this course, you will be able to:
-Automate common Linux administration tasks using Ansible
+## 🏆 Achievements
+- After completing this course, you will be able to:
+  Automate common Linux administration tasks using Ansible
 Customize Ansible playbooks to fit your specific needs
 Efficiently manage and configure multiple Linux hosts using Ansible
-# Ansible Quick Start  
 
+# Ansible Quick Start  
 ![Quick Start with Ansible](https://cover-creator.appbot.io/quick-start-with-ansible.png)]
 ![Start-Learning](https://img.shields.io/badge/Start-Learning-whitesmoke?style=for-the-badge)]
 
