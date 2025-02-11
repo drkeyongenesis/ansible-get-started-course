@@ -36,9 +36,9 @@ Your new codespace instance:
 
 |   Index | Name                                           | Difficulty   | Practice                                                                                                                        |
 |---------|------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------|
-|      01 | 📖 Ansible Installation on Ubuntu               | ★☆☆          | <a target='_blank' href=''>Start Lab</a>                 |
-|      02 | 🎯 Setup Ansible by Yourself                    | ★☆☆          | <a target='_blank' href=''>Start Challenge</a>                    |
-|      03 | 📖 Ansible Configuration                        | ★☆☆          | <a target='_blank' href=''>Start Lab</a>                         |
+|      01 | 📖 Ansible Installation on Ubuntu               | ★☆☆          | <a target='_blank' href='https://github.com/drkeyongenesis/ansible-get-started-course/blob/main/Lesson-01.md'>Start Lab</a>    |
+|      02 | 🎯 Setup Ansible by Yourself (SL3/4)            | ★☆☆          | <a target='_blank' href=''>Start Challenge</a>                    |
+|      03 | 📖 Ansible Configuration                        | ★☆☆          | <a target='_blank' href='https://github.com/drkeyongenesis/ansible-get-started-course/blob/main/Lesson-03.md'>Start Lab</a>                         |
 |      04 | 🎯 Resolving Ansible Python Interpreter Warning | ★☆☆          | <a target='_blank' href=''>Start Challenge</a> |
 |      05 | 📖 Ansible Groups Inventory                     | ★☆☆          | <a target='_blank' href=''>Start Lab</a>                      |
 |      06 | 📖 Ansible Ad-Hoc Commands                      | ★☆☆          | <a target='_blank' href=''>Start Lab</a>                       |
