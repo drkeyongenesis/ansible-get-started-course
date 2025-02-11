@@ -1,4 +1,4 @@
-Introduction
+2Introduction
 In this lab, you will learn about Ansible configuration files and how to customize Ansible's behavior. Ansible uses configuration files to define various settings that control its operation. You'll explore the default configuration, create a custom configuration file, and understand how different configuration options affect Ansible's behavior. By the end of this lab, you'll have hands-on experience with configuring Ansible for different scenarios, which is crucial for tailoring Ansible to your specific needs and environment.
 
 Certainly! Below are the necessary codes and configurations for the steps described in the lab.
@@ -38,25 +38,25 @@ Press `Q` to exit the output.
 Now, create a simple inventory file that will define the localhost:
 
 ```bash
-echo "localhost ansible_connection=local" > /home/labex/project/inventory
+echo "localhost ansible_connection=local" > /home/lab/project/inventory
 ```
 
-This command creates a minimal inventory file located at `/home/labex/project/inventory`.
+This command creates a minimal inventory file located at `/home/lab/project/inventory`.
 
 ### 3. **Create a Custom Ansible Configuration File**
 
-Create a custom configuration file `ansible.cfg` in the `/home/labex/project` directory:
+Create a custom configuration file `ansible.cfg` in the `/home/lab/project` directory:
 
 ```bash
-nano /home/labex/project/ansible.cfg
+nano /home/lab/project/ansible.cfg
 ```
 
 Add the following content:
 
 ```ini
 [defaults]
-inventory = /home/labex/project/inventory
-remote_user = labex
+inventory = /home/lab/project/inventory
+remote_user = lab
 host_key_checking = False
 stdout_callback = yaml
 
@@ -70,7 +70,7 @@ become_ask_pass = False
 ### Explanation of Configuration File:
 - **[defaults]** section:
   - `inventory`: Defines the path to your inventory file.
-  - `remote_user`: The default SSH user (in this case `labex`).
+  - `remote_user`: The default SSH user (in this case `lab`).
   - `host_key_checking`: Disabled for testing environments (set to `False` to skip SSH key verification).
   - `stdout_callback`: Sets the output format to YAML for better readability.
 
@@ -91,14 +91,14 @@ ansible-config dump --only-changed
 This command will show only the configuration settings that have been changed from the default settings. You should see something like:
 
 ```bash
-DEFAULT_BECOME(/home/labex/project/ansible.cfg) = True
-DEFAULT_BECOME_ASK_PASS(/home/labex/project/ansible.cfg) = False
-DEFAULT_BECOME_METHOD(/home/labex/project/ansible.cfg) = sudo
-DEFAULT_BECOME_USER(/home/labex/project/ansible.cfg) = root
-DEFAULT_HOST_LIST(/home/labex/project/ansible.cfg) = ['/home/labex/project/inventory']
-DEFAULT_REMOTE_USER(/home/labex/project/ansible.cfg) = labex
-DEFAULT_STDOUT_CALLBACK(/home/labex/project/ansible.cfg) = yaml
-HOST_KEY_CHECKING(/home/labex/project/ansible.cfg) = False
+DEFAULT_BECOME(/home/lab/project/ansible.cfg) = True
+DEFAULT_BECOME_ASK_PASS(/home/lab/project/ansible.cfg) = False
+DEFAULT_BECOME_METHOD(/home/lab/project/ansible.cfg) = sudo
+DEFAULT_BECOME_USER(/home/lab/project/ansible.cfg) = root
+DEFAULT_HOST_LIST(/home/lab/project/ansible.cfg) = ['/home/lab/project/inventory']
+DEFAULT_REMOTE_USER(/home/lab/project/ansible.cfg) = lab
+DEFAULT_STDOUT_CALLBACK(/home/lab/project/ansible.cfg) = yaml
+HOST_KEY_CHECKING(/home/lab/project/ansible.cfg) = False
 ```
 
 ### 5. **Create and Run a Playbook to Test the Configuration**
@@ -106,7 +106,7 @@ HOST_KEY_CHECKING(/home/labex/project/ansible.cfg) = False
 Create a playbook to test the custom configuration settings. Create a file called `test_config.yml`:
 
 ```bash
-nano /home/labex/project/test_config.yml
+nano /home/lab/project/test_config.yml
 ```
 
 Add the following content:
@@ -129,7 +129,7 @@ Add the following content:
         msg: "Inventory file: {{ lookup('config', 'DEFAULT_HOST_LIST') }}"
 
     - name: Check if become is enabled in ansible.cfg
-      command: grep "become = True" /home/labex/project/ansible.cfg
+      command: grep "become = True" /home/lab/project/ansible.cfg
       register: become_check
       changed_when: false
       failed_when: false
@@ -149,7 +149,7 @@ Add the following content:
 Now, run the playbook:
 
 ```bash
-ansible-playbook /home/labex/project/test_config.yml
+ansible-playbook /home/lab/project/test_config.yml
 ```
 
 ### 6. **Update `ansible.cfg` to Avoid Deprecation Warning**
@@ -164,8 +164,8 @@ Your updated `ansible.cfg` should look like this:
 
 ```ini
 [defaults]
-inventory = /home/labex/project/inventory
-remote_user = labex
+inventory = /home/lab/project/inventory
+remote_user = lab
 host_key_checking = False
 stdout_callback = yaml
 interpreter_python = /usr/bin/python3
@@ -182,7 +182,7 @@ become_ask_pass = False
 After updating the `ansible.cfg` file, re-run the playbook to confirm that the deprecation warning has been resolved:
 
 ```bash
-ansible-playbook /home/labex/project/test_config.yml
+ansible-playbook /home/lab/project/test_config.yml
 ```
 
 Now, you should see the output without the deprecation warning, and it should display your configuration settings correctly.
